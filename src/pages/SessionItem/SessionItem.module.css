@@ -1,0 +1,75 @@
+.Card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 450px;
+  width: 400px;
+  min-width: 250px;
+  padding: 1.5rem;
+
+  background-color: #17141d;
+  border-radius: 16px;
+  box-shadow: -1rem 0 3rem #000;
+
+  transition: transform 0.5s ease;
+
+  overflow: hidden;
+}
+
+.Card h3,
+.Card p {
+  white-space: nowrap; /* Keeps the text in a single line */
+  overflow: hidden; /* Ensures the overflow text is not displayed */
+  text-overflow: ellipsis; /* Adds an ellipsis to indicate there's more text */
+}
+
+.Card:hover {
+  transform: translateY(-1rem);
+}
+
+.Card:hover ~ .Card {
+  transform: translateX(130px);
+}
+
+.Card:not(:first-child) {
+  margin-left: -130px;
+}
+
+.Thumbnail {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.Header h3:hover {
+  background: linear-gradient(90deg, #ff8a00, #e52e71);
+  text-shadow: none;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#LearnMore p {
+  width: auto;
+  text-align: center;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #e52e71;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+#LearnMore p:hover {
+  background-color: #ff8a00;
+}
+

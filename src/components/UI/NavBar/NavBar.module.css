@@ -1,0 +1,47 @@
+.Header {
+  position: static;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 2rem;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  margin-bottom: 2.8rem;
+}
+
+.Logo {
+  color: #edeaf3;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.Selection {
+  position: relative;
+  font-size: 18px;
+  color: #edeaf3;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-left: 2.5rem;
+}
+
+.Selection::before {
+  content: "";
+  position: absolute;
+  /* width: 100%; */
+  width: 0;
+  height: 2px;
+  top: 100%;
+  left: 0;
+  background: #edeaf3;
+  transition: all 0.3s ease-in-out;
+}
+
+.Selection:hover::before {
+  width: 100%;
+}

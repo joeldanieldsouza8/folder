@@ -1,0 +1,39 @@
+.CardList {
+  display: flex; /* By default it arranges the items in a row  */
+  padding: 3rem;
+  overflow-x: scroll;
+}
+
+.CardList::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.CardList::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+  box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25),
+    inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.CardList::-webkit-scrollbar-track {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.25),
+    rgba(0, 0, 0, 0.25) 1px,
+    transparent 1px,
+    transparent 100%
+  );
+}
+
+.Header {
+  align-items: center;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.Header h2 {
+  margin: 0;
+  font-size: 2rem;
+  color: #cebfe7;
+}

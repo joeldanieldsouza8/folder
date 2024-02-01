@@ -1,0 +1,139 @@
+.SessionPage {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #2c2f33;
+  border-radius: 8px;
+  color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Article {
+  margin-bottom: 1rem;
+}
+
+.Header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.Header img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.Header h2 {
+  font-size: 2.5rem;
+  margin: 1rem 0;
+  color: #fff;
+}
+
+.Header time {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.Content {
+  text-align: justify;
+  padding: 1rem;
+  border-top: 1px solid #ddd;
+  margin-top: 1rem;
+  color: #fff;
+}
+
+.Modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.FormLabel,
+.ModalHeader {
+  color: #333;
+}
+
+.FormLabel {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.ModalHeader {
+  margin-bottom: 1.5rem;
+}
+
+.ModalContent {
+  width: 50%; /* Adjust this to change the width of the modal */
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.FormGroup {
+  margin-bottom: 1rem;
+}
+
+.FormInput {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.FormInput:focus {
+  outline: none;
+  border-color: #2196f3;
+  box-shadow: 0 0 0 2px rgba(33, 150, 243, 0.25);
+}
+
+.ModalFooter {
+  text-align: right;
+}
+
+.Button,
+.SaveButton,
+.CancelButton {
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.Button {
+    background-color: #2196f3;
+    color: #ffffff;
+}
+
+.SaveButton:hover {
+  background-color: #0d47a1;
+}
+
+.SaveButton {
+  background-color: #2196f3;
+  color: #ffffff;
+}
+
+.CancelButton {
+  background-color: #f44336;
+  color: #ffffff;
+}
+
+.CancelButton:hover {
+  background-color: #d32f2f;
+}

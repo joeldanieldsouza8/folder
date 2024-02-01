@@ -1,0 +1,48 @@
+.Section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  background: #373240; /* Dark background for contrast */
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Section img {
+  width: 150px; /* Fixed width, or use percentage */
+  margin-right: 2rem;
+  border-radius: 50%; /* Circular image */
+  border: 3px solid #ffffff; /* White border for the image */
+}
+
+.Section div {
+  flex: 1; /* Take up remaining space */
+  text-align: left;
+}
+
+.Section h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.Section p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .Section {
+    flex-direction: column; /* Stack image and text vertically on small screens */
+  }
+
+  .Section img {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .Section div {
+    text-align: center;
+  }
+}

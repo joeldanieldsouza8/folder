@@ -1,0 +1,102 @@
+.SessionsModal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.ModalContent {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 100%;
+  box-sizing: border-box;
+  color: #333;
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+}
+
+.ModalHeader {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #333;
+}
+
+.ModalData {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #eee;
+}
+
+.ModalData div {
+  display: flex;
+  flex-direction: column;
+}
+
+.ModalData div p {
+  margin: 0;
+}
+
+#Time {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #555;
+}
+
+#Heading {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  color: #555;
+}
+
+#BookingCount {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.CloseButton {
+  margin-top: 2rem;
+  background-color: #ff4757;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.CloseButton:hover {
+  background-color: #e8413d;
+}
+
+.DeleteButton,
+.AddButton {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin: 0.5rem;
+}
+
+.DeleteButton:hover,
+.AddButton:hover {
+  background-color: #2980b9;
+}
